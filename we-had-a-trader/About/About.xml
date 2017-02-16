@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>We Had a Trader?</name>
+  <author>Liebasam</author>
+  <url>https://github.com/liebasam/rimworld-mods</url>
+  <description>Creates an alert when traders are on the map.</description>
+  <targetVersion>0.16.1393</targetVersion>
+</ModMetaData>
