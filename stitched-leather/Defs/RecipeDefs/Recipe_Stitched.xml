@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+    <RecipeDef>
+        <defName>MakeStitchedLeather</defName>
+        <label>make stitched leather</label>
+        <description>Make stitched leather out of various other leathers.</description>
+        <jobString>Making stitched leather.</jobString>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+            <li>HandTailoringBench</li>
+            <li>ElectricTailoringBench</li>
+        </recipeUsers>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <workAmount>1000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+        </defaultIngredientFilter>
+
+        <products>
+            <StitchedLeather>15</StitchedLeather>
+        </products>
+        <workSkill>Crafting</workSkill>
+    </RecipeDef>
+
+</RecipeDefs>
