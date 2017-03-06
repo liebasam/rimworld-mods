@@ -29,7 +29,8 @@ namespace RimWorld
         {
             foreach (Map map in Find.Maps)
                 if (map.passingShipManager.passingShips.Count > 0)
-                    return (AlertReport)true;
+                    if (map.listerBuildings.AllBuildingsColonistOfClass<Building_CommsConsole>().Count() > 0)
+                        return (AlertReport)true;
             return (AlertReport)false;
         }
     }
