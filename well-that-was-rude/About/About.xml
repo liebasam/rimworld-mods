@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Well That Was Rude</name>
+  <author>Liebasam</author>
+  <url>https://github.com/liebasam/rimworld-mods</url>
+  <description>Gives the option to conditionally hold open doors, depending on other pawns' current path..</description>
+  <targetVersion>0.16.1393</targetVersion>
+</ModMetaData>
