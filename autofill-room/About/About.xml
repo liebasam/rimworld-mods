@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Autofill Room</name>
+  <author>Liebasam</author>
+  <url>https://github.com/liebasam/rimworld-mods</url>
+  <description>Left Shift + Click to auto-fill a room with the selected area</description>
+  <targetVersion>0.18.6527</targetVersion>
+</ModMetaData>
