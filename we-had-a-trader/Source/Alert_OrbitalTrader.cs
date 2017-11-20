@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RimWorld.Planet;
 using System.Linq;
 using System.Text;
 using Verse;
@@ -28,10 +27,15 @@ namespace RimWorld
         public override AlertReport GetReport()
         {
             foreach (Map map in Find.Maps)
+            {
                 if (map.passingShipManager.passingShips.Count > 0)
-                    if (map.listerBuildings.AllBuildingsColonistOfClass<Building_CommsConsole>().Count() > 0)
-                        return (AlertReport)true;
-            return (AlertReport)false;
+                {
+                    Building_CommsConsole console = map.listerBuildings.AllBuildingsColonistOfClass<Building_CommsConsole>().FirstOrDefault();
+                    if (console != null)
+                        return AlertReport.CulpritIs((GlobalTargetInfo)((Thing)console));
+                }
+            }
+            return false;
         }
     }
 }

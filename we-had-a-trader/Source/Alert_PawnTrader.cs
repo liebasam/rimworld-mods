@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld.Planet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,9 +38,10 @@ namespace RimWorld
 
         public override AlertReport GetReport()
         {
-            if (this.TraderPawns.Count<Pawn>() > 0)
-                return (AlertReport)true;
-            return (AlertReport)false;
+            Pawn pawn = this.TraderPawns.FirstOrDefault();
+            if (pawn == null)
+                return false;
+            return AlertReport.CulpritIs((GlobalTargetInfo)((Thing)pawn));
         }
 
         
