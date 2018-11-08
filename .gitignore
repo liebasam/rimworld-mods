@@ -1,0 +1,14 @@
+.gitignore
+Core/
+
+# Project data
+*.csproj
+*.csproj.user
+*.sln
+
+*/Properties
+*/.vs
+*/obj
+*/bin/Debug
+
+PublishedFileId.txt
